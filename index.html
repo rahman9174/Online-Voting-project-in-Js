@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Voting</title>
+    <link rel="stylesheet" href="style1.css">
+    <script src="./main.js"></script>
+    <!-- <script>
+        var bjp = 0 ;
+        var cong = 0;
+        var mns = 0;
+        var totalVote = 0;
+        var resultSection1 = document.getElementById("resultSection");
+        
+        function bjpfun(){
+             bjp = bjp+1;
+             totalVote++;
+             console.log(` bjp : ${bjp}`);
+             document.getElementById('bjpRes').innerHTML="BJP total votes : "+bjp;
+             document.getElementById('overAllVotes').innerHTML="Over All voting : "+totalVote;
+             
+        }
+        function congressfun(){
+                cong = cong + 1;
+                totalVote++;
+                console.log(` congress : ${cong}`);
+                document.getElementById('congRes').innerHTML="Congress total votes : "+cong;
+                document.getElementById('overAllVotes').innerHTML="Over All voting : "+totalVote;
+
+        }
+        function mnsfun(){
+                mns =  mns + 1;
+                totalVote++
+                console.log(` mns : ${mns}`);
+                document.getElementById('mnsRes').innerHTML="MNS total votes : "+mns;
+                document.getElementById('overAllVotes').innerHTML="Over All voting : "+totalVote;
+        }
+        function result(){
+            if(cong>bjp && cong>mns){
+                // document.getElementById('show').innerHTML=" Winner party : Congress";
+                document.getElementById('show').innerHTML=(`<strong> Winner Part is : Congress </strong> <br>
+                <strong>OverAll voting : </strong>${totalVote} <br>
+                <strong> Total vote for bjp :</strong> ${bjp}<br>
+                <strong> Total vote for congress :</strong> ${cong} <br>
+                <strong> Totl vote for mns :</strong> ${mns}<br><br>
+                <strong> Totl vote for mns :</strong> ${mns}<br><br><br><br>
+                <pre>"     Congratulations on your successful win in the election, 
+                    I am so happy for you. I know you are the perfect choice for
+                     this position and you will work for the people, God bless you." 
+                     </pre>
+                `);
+            }
+            else if(bjp > cong && bjp > mns){
+                // document.getElementById('show').innerHTML=" Winner party : BJP";
+                document.getElementById('show').innerHTML=(`<strong> Winner Part is : BJP </strong> <br>
+                <strong>OverAll voting : </strong>${totalVote} <br>
+                <strong> Total vote for bjp :</strong> ${bjp}<br>
+                <strong> Total vote for congress :</strong> ${cong} <br>
+                <strong> Totl vote for mns :</strong> ${mns}<br><br><br><br><br>
+                <pre>"     Congratulations on your successful win in the election, 
+                     I am so happy for you. I know you are the perfect choice for
+                     this position and you will work for the people, God bless you." 
+                     </pre>
+                `);
+
+            }
+            else if(bjp<mns && cong < mns){
+                // document.getElementById('show').innerHTML=" Winner party : MNS";
+                document.getElementById('show').innerHTML=(`<strong> Winner Part is : MNS </strong> <br>
+                <strong>OverAll voting : </strong>${totalVote} <br>
+                <strong> Total vote for bjp :</strong> ${bjp}<br>
+                <strong> Total vote for congress :</strong> ${cong} <br>
+                <strong> Totl vote for mns :</strong> ${mns}<br><br><br><br><br>
+                <pre>" Congratulations on your successful win in the election, 
+                     I am so happy for you. I know you are the perfect choice for
+                     this position and you will work for the people, God bless you." 
+                     </pre>
+                `);
+            }
+            else{
+                // document.getElementById('show').innerHTML=" Winner party : All party equals vote";
+                document.getElementById('show').innerHTML=(`<strong> Winner Part is : None (Because all party get the equals votes) </strong> <br>
+                <strong>OverAll voting : </strong>${totalVote} <br>
+                <strong> Total vote for bjp :</strong> ${bjp}<br>
+                <strong> Total vote for congress :</strong> ${cong} <br>
+                <strong> Totl vote for mns :</strong> ${mns}<br><br><br><br><br>
+                
+                `);
+            }
+            
+        }
+    </script> -->
+</head>
+
+<body>
+    <div id="div1">
+        <h1 id="head">Online voting sytem</h1>
+        <marquee behavior="" direction="ltr">Press the below any one button to your favourite leader</marquee>
+    </div>
+    <div id="resultSecton">
+        <p id="bjpRes">Total vote BJP</p>
+        <p id="congRes">Total vote Congress</p>
+        <p id="mnsRes">Total vote MNS</p>
+        <p id="overAllVotes">OverAll Votes</p>
+    </div>
+    <div id="container">
+        <div id="bjp">
+            <img src="./bjo logo1.png" alt=" bjp logo"><br><br>
+            <button onclick="bjpfun()">Vote for BJP</button>
+        </div>
+
+
+        <div id="congress">
+            <img src="./congress logo.png" alt="congress logo"><br><br>
+            <button onclick="congressfun()">Vote for Congress</button>
+        </div>
+
+
+        <div id="mns">
+            <img src="./mns logo.jpg" alt="mns ologo"><br><br>
+            <button onclick="mnsfun()">Vote for MNS</button>
+        </div>
+
+        <button onclick="result()" id="res"><a href="#finalRes">Result</a></button>
+    </div>
+    <div id="finalRes">
+        <h2><ins>Result</ins></h2>
+        <p id="show"></p>
+    </div>
+</body>
+
+</html>

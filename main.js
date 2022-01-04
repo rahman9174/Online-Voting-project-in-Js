@@ -31,7 +31,7 @@
     function result(){
             if(cong>bjp && cong>mns){
         // document.getElementById('show').innerHTML=" Winner party : Congress";
-        document.getElementById('show').innerHTML = (`<strong> Winner Part is : Congress </strong> <br>
+        document.getElementById('show').innerHTML = (`<strong> Winner Party is : Congress </strong> <br>
                 <strong>OverAll voting : </strong>${totalVote} <br>
                 <strong> Total vote for bjp :</strong> ${bjp}<br>
                 <strong> Total vote for congress :</strong> ${cong} <br>
@@ -45,7 +45,7 @@
             }
             else if(bjp > cong && bjp > mns){
         // document.getElementById('show').innerHTML=" Winner party : BJP";
-        document.getElementById('show').innerHTML = (`<strong> Winner Part is : BJP </strong> <br>
+        document.getElementById('show').innerHTML = (`<strong> Winner Party is : BJP </strong> <br>
                 <strong>OverAll voting : </strong>${totalVote} <br>
                 <strong> Total vote for bjp :</strong> ${bjp}<br>
                 <strong> Total vote for congress :</strong> ${cong} <br>
@@ -59,7 +59,7 @@
             }
     else if(bjp<mns && cong < mns){
         // document.getElementById('show').innerHTML=" Winner party : MNS";
-        document.getElementById('show').innerHTML = (`<strong> Winner Part is : MNS </strong> <br>
+        document.getElementById('show').innerHTML = (`<strong> Winner Party is : MNS </strong> <br>
                 <strong>OverAll voting : </strong>${totalVote} <br>
                 <strong> Total vote for bjp :</strong> ${bjp}<br>
                 <strong> Total vote for congress :</strong> ${cong} <br>
@@ -72,7 +72,7 @@
             }
     else{
         // document.getElementById('show').innerHTML=" Winner party : All party equals vote";
-        document.getElementById('show').innerHTML = (`<strong> Winner Part is : None (Because all party get the equals votes) </strong> <br>
+        document.getElementById('show').innerHTML = (`<strong> Winner Party is : None (Because all party get the equals votes) </strong> <br>
                 <strong>OverAll voting : </strong>${totalVote} <br>
                 <strong> Total vote for bjp :</strong> ${bjp}<br>
                 <strong> Total vote for congress :</strong> ${cong} <br>
